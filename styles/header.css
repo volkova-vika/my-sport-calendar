@@ -1,0 +1,148 @@
+header {
+    position: inherit; 
+    background-color: rgb(155, 71, 198);
+    color: white;
+    padding: 15px 15;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* tried to adapt elements :) */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+#logo img {
+    height: 50px; 
+    width: auto; 
+    display: block;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+nav ul{
+    display: flex;
+    width: 600px;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+.search-container {
+    display: flex;
+    align-items: space-around;
+    /* justify-content: center; */
+    margin-left: 10px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid fuchsia;
+    border-radius: 20px;
+}
+
+.search button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: fuchsia;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background-color: fuchsia;
+}
+
+.my-profile {
+    display: flex;
+    position: sticky;
+}
+
+ #btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: fuchsia;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+ #btn:hover {
+    background: linear-gradient(135deg, #ff00d4, #ff005d);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* mobile adapt */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #searchInput {
+        width: 60%; 
+    }
+
+    .my-profile {
+        margin-top: 10px;
+    }
+}

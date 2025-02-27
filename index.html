@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./styles/header.css">
+<link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo-block">
+                    <a href="#logo" id="logo"><img src="https://cdn-icons-png.flaticon.com/512/7656/7656036.png" alt="logo"></a>
+                </div>
+                <div class="menu-block">
+                    <ul>
+                        <li><a href="/yoga">Yoga</a></li>
+                        <li><a href="/stretching">Stretching</a></li>
+                        <li><a href="/bodyshape">Body Shape</a></li>
+                        <li><a href="/fitness">Active Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search for activities...">
+                    <button type="submit">Go</button>
+                </div>
+                <div class="my-profile">
+                    <button id="btn">My Profile</button>
+                </div>
+            </nav>
+        </header>
+
+        <section id="main">
+            <section class="activities">
+                <span class="filter">
+                    <label for="filter">Filter by category:</label>
+                    <select id="filter">
+                        <option value="">All</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="stretching">Stretching</option>
+                        <option value="bodyshape">Body Shape</option>
+                        <option value="fitness">Active Fitness</option>
+                    </select>
+                </span>
+                <p id="heading2">
+                    <h2>
+                        Yoga Sessions
+                    </h2>
+                </p>
+                <div class="activity-yoga">
+                    <div class="activity">
+                        <img class="img" src="https://media.foodspring.com/magazine/public/uploads/2021/01/%C2%A9MmeEmil.jpg" alt="Active Fitness">
+                        <p class="category">Vinyasa yoga</p>
+                        <p class="desciption">Many types of yoga can also be considered "vinyasa flows," such as ashtanga, power yoga, and prana.</p>
+                        <p class="schedule">Daily</p>
+                        <button class="details-btn">View Details</button>
+                        <button class="add-btn">Add to calendar</button>
+                    </div>
+                <div class="activity">
+                    <img class="img" src="https://nuiyoga.com/cdn/shop/articles/kundalini-yoga.jpg?v=1720785679" alt="Soul Yoga">
+                    <p class="category">Hatha yoga</p>
+                    <p class="desciption">Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles.</p>
+                    <p class="schedule">Daily</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+
+                <div class="activity">
+                    <img class="img" src="https://serpentine.yoga/wp-content/uploads/2024/02/Image-by-elina-fairytale-Pexels-Final-Edit-1.jpg" alt="Body Fitness">
+                    <p class="category">Restorative Yoga</p>
+                    <p class="desciption">At its core, this style focuses on body relaxation. Restorative yoga also helps to cleanse and free your mind.</p>
+                    <p class="schedule">2x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://cdn.yogajournal.com/wp-content/uploads/2018/03/web-10bodiessequence-4.jpg?width=730" alt="Body Fitness">
+                    <p class="category">Kundalini yoga</p>
+                    <p class="desciption">A kundalini class trains your core and breath with fast-moving, invigorating postures and breath exercises.</p>
+                    <p class="schedule">2x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+            </div>
+            <p id="heading2">
+                <h2>
+                    Stretching Sessions
+                </h2>
+            </p>
+            <div class="activity-stretching">
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Stretching">
+                    <p class="category">Stretching</p>
+                    <p class="schedule">3x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+            </div>
+            <p id="heading2">
+                <h2>
+                    BodyShape Sessions
+                </h2>
+            </p>
+            <div class="activity-bodyShape">
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+            </div>
+            <p id="heading2">
+                <h2>
+                    Fitness Sessions
+                </h2>
+            </p>
+            <div class="activity-fitness">
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+                <div class="activity">
+                    <img class="img" src="https://bod-cms-assets.prod.cd.beachbodyondemand.com/images/eonsdgcj/production/26593080aeb9d39e734700a057b09d44f049e641-1600x1600.jpg?format=webp" alt="Active Fitness">
+                    <p class="category">Active Fitness</p>
+                    <p class="schedule">5x per week</p>
+                    <button class="details-btn">View Details</button>
+                    <button class="add-btn">Add to calendar</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    </div>
+
+        <footer>
+            <p>&copy; 2025 By vvoukava. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="https://w7.pngwing.com/pngs/826/632/png-transparent-facebook-meta-facebook-logo-facebook-meta-social-media-app-3d-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="Twitter"></a>
+                <a href="#"><img src="https://www.citypng.com/public/uploads/preview/square-instagram-logo-illustration-701751694793444cjvbk9kvlx.png" alt="Instagram"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
