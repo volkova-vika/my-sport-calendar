@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,76 +14,103 @@ body {
 }
 
 .activities {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-    /* margin-top: 20px; */
+    gap: 10px;
+}
+
+#yogaContainer, 
+#stretchingContainer, 
+#fitnessContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .activity {
-    background-color: white;
     width: 250px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
 }
 
 .activity:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.activity img {
-    width: 100%;
-    height: 30px;
-    object-fit: cover; 
-    border-radius: 10px;
-}
-#heading2 {
-    /* width: 100%; */
-    align-self: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.activity-fitness {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-.activity-yoga {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.activity-stretching {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.activity-bodyShape {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 .activity img {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
-.filter {
+
+.activity .category {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.activity .description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.activity .schedule {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.activity .type {
+    font-size: 1.3em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.activity .details-btn {
+    background-color: rgb(214, 207, 212);
+    color: white !important;
+    font-weight: bold;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* .activity .details-btn:hover {
+    background-color: #ff3b2f;
+} */
+
+#heading2, h2 {
+    width: 100%;
+    font-size: 24px;
+    padding: 10px 10px;
+}
+
+.activity-fitness,
+.activity-yoga,
+.activity-stretching {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* .filter {
     display: flex;
     width: 300px;
     margin-top: 20px;
@@ -93,26 +120,9 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-}
+} */
 
-.category {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.description {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
-
-.schedule {
-    color: gray;
-    font-size: 0.9rem;
-}
-
-.details-btn, .add-btn {
+/* .details-btn {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -122,23 +132,11 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: 0.3s;
-}
-
-.details-btn {
-    background-color: #747075;
+    background-color: grey;
     color: white;
-}
+    font-weight: bold;
+}    */
 
-.details-btn:hover {
+/* .details-btn:hover {
     background-color: #747075;
-}
-
-.add-btn {
-    background-color: #ae27a5;
-    color: white;
-}
-
-.add-btn:hover {
-    background-color: #ae27a5;
-}
-
+} */

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px grey transparent
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 280px; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px grey transparent;
+}
+
+.about1, .about2 {
+    flex: 1; 
+    min-width: 280px; 
+    background: #e9eff5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+#editBtn {
+    background-color: fuchsia;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calendar {
+    background-color: #ffebf5;
+    padding: 20px;
+    border: 1px solid fuchsia;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(105, 24, 90, 0.1);
+    margin-top: 20px;
+    width: 300px
+}
+
+.workout-cards {
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.workout {
+    display: flex;
+    flex-direction: column;
+    background: #ffebf5;
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workout:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba
+}
+
+.heading2 {
+    margin: 0;
+    width: 100%;
+} 
+
+.scheduled-sessions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.recently-visited {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

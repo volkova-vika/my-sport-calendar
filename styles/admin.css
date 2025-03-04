@@ -1,0 +1,43 @@
+.activity-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+label {
+    /* margin-top: 20px; */
+    padding: 10px;
+    display: flex;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+} 
+
+   #submit {
+    margin: 10px;
+    padding: 10px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+   }
+#delete {
+    margin: 10px;
+    padding: 10px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+   
+}
+
+   #heading2 {
+    margin-top: 20px;
+    font-size: 24px;
+   }

@@ -5,17 +5,17 @@ document.getElementById("btn").addEventListener("click", function() {
 // Add click event listeners to all buttons with the class "schedule-btn"
 document.querySelectorAll('.schedule-btn').forEach(button => {
     button.addEventListener('click', function () {
-        // Get the type of yoga session from the button's data attribute
-        const yogaType = this.getAttribute('data-type');
+        // Get the type of stretching session from the button's data attribute
+        const stretchingType = this.getAttribute('data-type');
 
-        // Prompt the user to enter the date and time for the yoga session
-        const selectedDate = prompt("Please enter the date (YYYY-MM-DD) for the yoga session:");
-        const selectedTime = prompt("Please enter the time (HH:MM) for the yoga session:");
+        // Prompt the user to enter the date and time for the stretching session
+        const selectedDate = prompt("Please enter the date (YYYY-MM-DD) for the stretching session:");
+        const selectedTime = prompt("Please enter the time (HH:MM) for the stretching session:");
 
         if (selectedDate && selectedTime) {
             // Create an object to hold the session data
             const scheduleData = {
-                type: yogaType, 
+                type: stretchingType, 
                 date: selectedDate,
                 time: selectedTime
             };
@@ -30,7 +30,7 @@ document.querySelectorAll('.schedule-btn').forEach(button => {
             })
             .then(response => response.json())
             .then(data => {
-                alert('Yoga session scheduled successfully! Check your profile', data);
+                alert('Stretching session scheduled successfully! Check your profile', data);
             })
             .catch(error => {
                 console.error('Error scheduling session:', error);

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Admin Page</title>
 <link rel="stylesheet" href="../styles/header.css">
+<link rel="stylesheet" href="../index.css">
 <link rel="stylesheet" href="../styles/footer.css">
-<link rel="stylesheet" href="../styles/profile.css">
+<link rel="stylesheet" href="../styles/admin.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                     <ul>
                         <li><a href="../yoga/yoga.html">Yoga</a></li>
                         <li><a href="../stretching/stretching.html">Stretching</a></li>
-                        <li><a href="../fitness/fitness.html">Fitness</a></li>
+                        <li><a href="../fitness/fitness.html">Active Fitness</a></li>
                     </ul>
                 </div>
                 <div class="search">
@@ -34,45 +35,31 @@
         </header>
     </div>
 
-    <section class="profile">
-        <div class="about-me">
-            <div class="about1">
-                <h2>About Me</h2>
-                <p>Name: <strong>Viktoria</strong></p>
-                <p>Email: vika.vika@gmail.com</p>
-                <p>Registration Date: 12.03.2023</p>
-                <p>Favourites: Yoga, Fitness, Running</p>
-                <button id="editBtn">Edit Profile</button>
-            </div>
-            <div class="about2">
-                <h2>Favorites</h2>
-                <p>Stretching (4)</p>
-                <p>Fitness (3)</p>
-                <p>Meditation (8)</p>
-                <p>Yoga (5)</p>
-                <p>Running (2)</p>
-            </div>
-        </div>
+    <div class="activity-set">
+        <section id="admin">
+        <h2 id="heading2">Add New Activity</h2>
+        <form id="adminForm">
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required><br><br>
+            <label for="type">Activity Type:</label>
+            <input type="text" id="type" name="type" required><br><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required><br><br>
+            <label for="schedule">Schedule:</label>
+            <input type="text" id="schedule" name="schedule" required><br><br>
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" name="image" required><br><br>
+            <button id="submit" type="submit">Add Activity</button>
+        </form>
     </section>
-    <div>
-        <input type="date" name="mainCalendar" id="calendar">
+    
+    <section id="admin">
+        <h2 id="heading2">Delete Activity</h2>
+        <form id="adminForm">
+            <button id="delete" type="delete">Delete Activity</button>
+        </form>
+    </section>
     </div>
-    <section class="workout-cards">
-        <div class="heading2">
-            <h2>Scheduled for Today</h2>
-        </div>
-        <div class="scheduled-sessions">
-        </div>
-    </section>
-    <section class="workout-cards">
-        <div class="heading2">
-            <h2>Recently visited</h2>
-        </div>
-        <div class="recently-visited">
-        </div>
-        
-    </section>
-
         <footer>
             <p>&copy; 2025 By vvoukava. All rights reserved.</p>
             <div class="social-media">
@@ -83,6 +70,6 @@
         </footer>
     </div>
 
-    <script src="./profile.js"></script>
+    <script src="./admin.js"></script>
 </body>
 </html>

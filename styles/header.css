@@ -1,13 +1,16 @@
+
 header {
     position: inherit; 
     background-color: rgb(155, 71, 198);
     color: white;
-    padding: 15px 15;
+    padding: 15px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap; /* tried to adapt elements :) */
+    flex-wrap: wrap; /* to adapt elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header is always on top */
 }
 
 #logo {
@@ -24,25 +27,22 @@ header {
 
 nav {
     display: flex;
-    width: 100%;
-    flex-direction: row;
+    flex: 1; /* to stretch and fill the available space */
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
 }
 
-nav ul{
+nav ul {
     display: flex;
-    width: 600px;
-    font-weight: bold;
+    flex-wrap: wrap; /* to adapt on small screens */
     justify-content: space-around;
     align-items: center;
-    text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     gap: 20px;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 nav ul li {
@@ -52,24 +52,32 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: lightgray;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f0f0;
 }
 
 .search-container {
     display: flex;
-    align-items: space-around;
-    /* justify-content: center; */
+    align-items: center;
     margin-left: 10px;
 }
 
 #searchInput {
     padding: 10px;
-    width: 150px;
+    width: 180px; /* adjusted width */
     border: 1px solid fuchsia;
     border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+#searchInput:focus {
+    width: 250px; /* width on focus */
 }
 
 .search button {
@@ -80,19 +88,23 @@ nav ul li a:hover {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .search button:hover {
-    background-color: fuchsia;
+    background-color: #ff006a;
+    transform: scale(1.05);
+}
+
+.search button:active {
+    transform: scale(0.95);
 }
 
 .my-profile {
     display: flex;
     position: sticky;
 }
-
- #btn {
+#btn {
     padding: 10px 15px;
     border: none;
     background-color: fuchsia;
@@ -102,18 +114,7 @@ nav ul li a:hover {
     transition: 0.3s;
  }
 
- #btn:hover {
-    background: linear-gradient(135deg, #ff00d4, #ff005d);
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-#btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* mobile adapt */
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
