@@ -1,21 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .activity-set {
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
 }
 label {
-    /* margin-top: 20px; */
-    padding: 10px;
+    padding: 20px;
     display: flex;
 }
 
 input {
-    margin: 10px;
+    /* margin: 10px; */
+    margin-left: 10px;
     padding: 10px;
     width: 200px;
 } 
 
-   #submit {
+#submit {
     margin: 10px;
     padding: 10px 10px;
     background-color: green;
@@ -36,8 +40,7 @@ input {
     border-radius: 5px;
    
 }
-
    #heading2 {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 24px;
    }

@@ -34,28 +34,39 @@
         </header>
 
         <section class="yoga-main">
+
+            
             <h1>Welcome to the Yoga Main Page!</h1>
             <p>This is the main page for all yoga activities. You can find various yoga styles, videos, and resources here.</p>
+
+                <label for="scheduleDate">Select Date:</label>
+                <input type="date" id="scheduleDate">
+                <label for="scheduleTime">Select Time:</label>
+                <input type="time" id="scheduleTime">
+                <!-- <button id="confirmSchedule">Schedule</button> -->
+                        <br>
+
             <div class="yoga-styles">
-                <h2>Yoga Styles</h2>
+                <p>Select type of yoga below:</p>
                 <ul>
                     <li>
                         <a href="vinyasa.html">Vinyasa Yoga</a>
-                        <p>Vinyasa yoga involves a series of poses that flow smoothly into one another, synchronized with your breath.</p>
-                        <button class="schedule-btn" data-type="Vinyasa Yoga">Schedule a Visit</button>
+                        <p>The word “Vinyasa” has two parts, with Vi meaning variation and Nyasa meaning within prescribed limits.</p>
+                        <button class="schedule-btn" data-type="Vinyasa Yoga" disabled>Schedule a Visit</button>
                     </li>
                     <li>
                         <a href="ashtanga.html">Ashtanga Yoga</a>
-                        <p>Ashtanga yoga is a vigorous style of yoga that follows a specific sequence of postures and is similar to vinyasa yoga.</p>
-                        <button class="schedule-btn" data-type="Ashtanga Yoga">Schedule a Visit</button>
+                        <p>Famous as the yoga form for weight loss, the ashtanga word is a derivative of the word eight in Sanskrit.</p>
+                        <button class="schedule-btn" data-type="Ashtanga Yoga" disabled>Schedule a Visit</button>
                     </li>
                     <li>
-                        <a href="power-yoga.html">Power Yoga</a>
-                        <p>Power yoga is a fast-paced style of yoga that's focused on building strength and endurance.</p>
-                        <button class="schedule-btn" data-type="Power Yoga">Schedule a Visit</button>
+                        <a href="kundalini-yoga.html">Kundalini Yoga</a>
+                        <p>Also known as the “yoga of awareness”, Kundalini yoga includes repetitive poses.</p>
+                        <button class="schedule-btn" data-type="Kundalini Yoga" disabled>Schedule a Visit</button>
                     </li>
                 </ul>
             </div>
+                        
             <div class="yoga-videos">
                 <h2>Yoga Videos</h2>
                 <p>Explore our collection of yoga videos to practice at home:</p>

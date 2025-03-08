@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 50px;
     padding: 0px;
 }
 
@@ -21,10 +22,25 @@
     gap: 10px;
 }
 
+#heading2, h2 {
+    width: 100%;
+    font-size: 24px;
+    padding: 10px 10px;
+}
+
 #yogaContainer, 
 #stretchingContainer, 
 #fitnessContainer {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.activity-fitness,
+.activity-yoga,
+.activity-stretching {
+    display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -53,7 +69,7 @@
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
+/*text fields*/
 .activity .category {
     font-size: 1.2em;
     font-weight: bold;
@@ -90,53 +106,3 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-/* .activity .details-btn:hover {
-    background-color: #ff3b2f;
-} */
-
-#heading2, h2 {
-    width: 100%;
-    font-size: 24px;
-    padding: 10px 10px;
-}
-
-.activity-fitness,
-.activity-yoga,
-.activity-stretching {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-/* .filter {
-    display: flex;
-    width: 300px;
-    margin-top: 20px;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-} */
-
-/* .details-btn {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
-    background-color: grey;
-    color: white;
-    font-weight: bold;
-}    */
-
-/* .details-btn:hover {
-    background-color: #747075;
-} */

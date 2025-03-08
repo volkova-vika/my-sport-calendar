@@ -19,6 +19,7 @@
 .about-me {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     min-width: 280px; 
     padding: 20px;
@@ -27,9 +28,10 @@
 }
 
 .about1, .about2 {
-    flex: 1; 
-    min-width: 280px; 
-    background: #e9eff5;
+    min-width: 380px; 
+    background: #ecec60;
+    color: darkslategrey;    
+    text-align: center;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

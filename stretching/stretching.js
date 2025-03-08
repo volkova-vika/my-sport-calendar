@@ -2,6 +2,27 @@ document.getElementById("btn").addEventListener("click", function() {
     window.location.href = "/profile/profile.html";
 })
 
+const scheduleDate = document.getElementById("scheduleDate");
+const scheduleTime = document.getElementById("scheduleTime");
+const scheduleButtons = document.querySelectorAll(".schedule-btn");
+
+function disableButton() {
+    // Check if date and time inputs are valid
+    const isDateFilled = scheduleDate.value.trim() !== ""; // Validate date input
+    const isTimeFilled = scheduleTime.value.trim() !== ""; // Validate time input
+
+    scheduleButtons.forEach(button => {
+        button.disabled = !(isDateFilled && isTimeFilled); // Enable button only if both inputs are filled
+    });
+}
+
+// Attach listeners to the date and time inputs
+scheduleDate.addEventListener("input", disableButton);
+scheduleTime.addEventListener("input", disableButton);
+
+// Ensure buttons are disabled on page load
+disableButton();
+
 // Add click event listeners to all buttons with the class "schedule-btn"
 document.querySelectorAll('.schedule-btn').forEach(button => {
     button.addEventListener('click', function () {
@@ -9,8 +30,8 @@ document.querySelectorAll('.schedule-btn').forEach(button => {
         const stretchingType = this.getAttribute('data-type');
 
         // Prompt the user to enter the date and time for the stretching session
-        const selectedDate = prompt("Please enter the date (YYYY-MM-DD) for the stretching session:");
-        const selectedTime = prompt("Please enter the time (HH:MM) for the stretching session:");
+        const selectedDate = scheduleDate.value;
+        const selectedTime = scheduleTime.value;
 
         if (selectedDate && selectedTime) {
             // Create an object to hold the session data

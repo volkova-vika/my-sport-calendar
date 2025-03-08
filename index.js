@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('https://sport-calendar-new-default-rtdb.firebaseio.com/admin.json')
         .then(response => response.json()) // Parse the JSON response
         .then(data => {
-            // Loop through each activity in the fetched data
+            
             for (let key in data) {
-                createCard(data[key]); // Create a card for each activity
+                createCard(data[key]); 
             }
         })
-        .catch(error => console.error('Error fetching activities:', error)); // Handle any errors during fetch
+        .catch(error => console.error('Error fetching activities:', error)); 
 });
 
-// Function to create a card for an activity
+// Create a card for an activity
 function createCard(activity) {
     let cardContainer;
 
@@ -32,8 +32,8 @@ function createCard(activity) {
             cardContainer = document.getElementById('fitnessContainer'); // Container for Fitness cards
             break;
         default:
-            console.error('Unknown category:', activity.category); // Log an error for unknown categories
-            return; // Exit the function for unknown categories
+            console.error('Unknown category:', activity.category); // Error if unknown
+            return; // Exit 
     }
 
     const card = document.createElement('div'); // Create a new div element for the card
@@ -76,7 +76,7 @@ function createCard(activity) {
     } else if (activity.category.toLowerCase() === 'fitness') {
     link = '/fitness/fitness.html';
     } else {
-    link = '#'; // Fallback link, in case the category does not match any known category
+    link = '#'; // if unknown
     }
 
 detailsButton.innerHTML = `<a href="${link}">Discover</a>`; // Set the inner HTML of the button

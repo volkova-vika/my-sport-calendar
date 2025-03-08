@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
 <link rel="stylesheet" href="../styles/header.css">
-<link rel="stylesheet" href="../index.css">
+<!-- <link rel="stylesheet" href="../index.css"> -->
 <link rel="stylesheet" href="../styles/footer.css">
 <link rel="stylesheet" href="../styles/admin.css">
 </head>
@@ -55,8 +55,10 @@
     
     <section id="admin">
         <h2 id="heading2">Delete Activity</h2>
-        <form id="adminForm">
-            <button id="delete" type="delete">Delete Activity</button>
+        <form id="deleteForm">
+            <label for="userId">Activity ID:</label>
+            <input type="text" id="userId" name="userId" required>
+            <button id="delete" type="button">Delete Activity</button>
         </form>
     </section>
     </div>

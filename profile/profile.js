@@ -2,12 +2,12 @@ document.getElementById("logo").addEventListener("click", function() {
     window.location.href = "../index.html";
 })
 
-// JavaScript code runs only after the entire HTML document has been loaded
+// we start the code only after the entire HTML document is loaded
 document.addEventListener('DOMContentLoaded', function () {
     const visitedContainer = document.querySelector('.recently-visited'); // Select the container for recently visited sessions
 
     // Load from local storage on page load
-    const recentlyVisitedSessions = JSON.parse(localStorage.getItem('recentlyVisited')) || []; // Retrieve saved sessions from local storage, or use an empty array if none exist
+    const recentlyVisitedSessions = JSON.parse(localStorage.getItem('recentlyVisited')) || []; // Retrieve saved sessions from LS || use empty array if none exist
     displayVisitedSessions(recentlyVisitedSessions, visitedContainer); // Display the saved sessions
 });
 
@@ -37,10 +37,10 @@ document.getElementById('calendar').addEventListener('change', function () {
         let recentlyVisitedSessions = JSON.parse(localStorage.getItem('recentlyVisited')) || []; // Retrieve saved sessions from local storage, or use an empty array if none exist
 
         for (const key in data) { // Iterate over each session in the data
-            const session = data[key]; // Get the session object
-            const sessionDate = session.date; // Get the session date
-            const sessionTime = session.time; // Get the session time
-            const sessionType = session.type; // Get the session type
+            const session = data[key]; // session object
+            const sessionDate = session.date; 
+            const sessionTime = session.time; 
+            const sessionType = session.type; 
 
             const workoutDiv = document.createElement('div'); // Create a new div element
             workoutDiv.classList.add('workout'); // Add the "workout" class to the div

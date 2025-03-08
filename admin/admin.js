@@ -42,7 +42,12 @@ document.getElementById('adminForm').addEventListener('submit', function (event)
 const deleteButton = document.getElementById('delete');
 
 deleteButton.onclick = () => {
-    const userId = '-OKDd74BKmiKiRXFSR2N';
+    const userId = document.getElementById('userId').value; 
+
+    if (!userId) {
+        alert('Please enter a valid Activity ID.');
+        return;
+    }
 
     fetch(`https://sport-calendar-new-default-rtdb.firebaseio.com/admin/${userId}.json`, {
         method: 'DELETE',
@@ -51,6 +56,12 @@ deleteButton.onclick = () => {
         },
     })
     .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error:', error));
+    .then(data => {
+        alert('Activity deleted successfully!');
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error deleting activity:', error);
+        alert('Failed to delete activity. Please try again.');
+    });
 };
