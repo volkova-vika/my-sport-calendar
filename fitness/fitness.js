@@ -28,7 +28,6 @@ document.querySelectorAll('.schedule-btn').forEach(button => {
         // Get the type of yoga session from the button's data attribute
         const fitnessType = this.getAttribute('data-type');
 
-        // Prompt the user to enter the date and time for the yoga session
         const selectedDate = scheduleDate.value;
         const selectedTime = scheduleTime.value;
 
